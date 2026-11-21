@@ -48,6 +48,14 @@
 
 > Applicable to Chromium-based browsers such as Microsoft Edge, Google Chrome, etc.
 
+* Method 1
+
+1. Download the latest `.crx` file from the [Releases](https://github.com/rs9c/simple-bookmarks/releases) page;
+2. Open the browser's "Extension Management" page (e.g., `edge://extensions/`, `chrome://extensions/`);
+3. Drag the downloaded `.crx` file into the extension management page and enable the extension.
+
+* Method 2
+
 1. Download the latest `.zip` file from the [Releases](https://github.com/rs9c/simple-bookmarks/releases) page and extract it to any directory;
 2. Open the browser's "Extension Management" page (e.g., `edge://extensions/`, `chrome://extensions/`);
 3. Enable "Developer mode";

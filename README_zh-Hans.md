@@ -48,6 +48,14 @@
 
 > 适用于 Microsoft Edge、Google Chrome 等基于 Chromium 内核的浏览器。
 
+* 方法一
+
+1. 在 [Releases](https://github.com/rs9c/simple-bookmarks/releases) 页面下载最新版本的 `.crx` 文件；
+2. 打开浏览器的“扩展管理”页面（如`edge://extensions/`、`chrome://extensions/`）；
+3. 将下载的 `.crx` 文件拖入扩展管理页面，并启用扩展。
+
+* 方法二
+
 1. 在 [Releases](https://github.com/rs9c/simple-bookmarks/releases) 页面下载最新版本的 `.zip` 文件，并解压到任意目录；
 2. 打开浏览器的“扩展管理”页面（如`edge://extensions/`、`chrome://extensions/`）；
 3. 启用“开发者模式”；
