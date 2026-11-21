@@ -1,0 +1,155 @@
+:host {
+    all: initial;
+}
+
+#strip {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+#strip.ready {
+    transition: top 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#strip.dragging {
+    transition: none;
+}
+
+.item {
+    position: relative;
+    width: 15px;
+    pointer-events: auto;
+    cursor: pointer;
+    user-select: none;
+    touch-action: none;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.18));
+    transition:
+        width 260ms cubic-bezier(0.22, 1, 0.36, 1),
+        filter 180ms ease-out,
+        margin-top 220ms cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 180ms ease-out;
+}
+
+.item + .item {
+    margin-top: 12px;
+}
+
+.item.instant,
+.item.instant .body {
+    transition: none;
+}
+
+.item:hover {
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.28));
+}
+
+.item.collapsed {
+    margin-top: 0;
+    opacity: 0;
+}
+
+#strip.dragging .item {
+    transition: none;
+}
+
+.body {
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    transition: height 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.item.collapsed .body {
+    height: 0;
+}
+
+.shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.icon {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.letter {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: #8b9099;
+    color: #fff;
+    font:
+        600 13px/22px system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    right: 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font:
+        600 12px/1 system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+#strip.dragging .label {
+    transition: none;
+}
+
+.tooltip {
+    position: fixed;
+    padding: 4px 9px;
+    border-radius: 7px;
+    background: #fff;
+    color: #1f2328;
+    font:
+        12px/1.5 system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .tooltip {
+        background: #3a3d42;
+        color: #f2f2f2;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+}

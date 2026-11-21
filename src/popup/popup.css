@@ -1,0 +1,97 @@
+body {
+    width: 214px;
+    margin: 0;
+    padding: 12px;
+    background: #fff;
+    color: #1f2328;
+    font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 34px;
+    padding: 0 9px;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition:
+        box-shadow 160ms ease-out,
+        transform 160ms ease-out;
+}
+
+.color.linked {
+    cursor: pointer;
+}
+
+.color.linked:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(-1px);
+}
+
+.color img {
+    width: 18px;
+    height: 18px;
+    margin-right: auto;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.92);
+    object-fit: contain;
+}
+
+.color .letter {
+    width: 18px;
+    height: 18px;
+    margin-right: auto;
+    border-radius: 4px;
+    background: #8b9099;
+    color: #fff;
+    font:
+        600 11px/18px system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.color input {
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    border: 2px solid rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+    transition: background-color 160ms ease-out;
+}
+
+.color input:checked {
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232b2b2b' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5 9.5 18 20 6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px;
+}
+
+.color input:focus-visible {
+    outline: 2px solid #1f2328;
+    outline-offset: 2px;
+}
