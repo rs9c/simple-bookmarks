@@ -1,0 +1,12 @@
+{
+    "extName": { "message": "简单的书签" },
+    "extDisc": { "message": "读文档读到一半？仅需一次鼠标点击即可记录当前进度。" },
+    "popupTitle": { "message": "启用/禁用书签" },
+    "colorOrangeRed": { "message": "橙红" },
+    "colorYellow": { "message": "黄色" },
+    "colorGreen": { "message": "绿色" },
+    "colorCyan": { "message": "青色" },
+    "colorPurple": { "message": "紫色" },
+    "colorGray": { "message": "灰色" },
+    "clearBookmark": { "message": "清空书签" }
+}

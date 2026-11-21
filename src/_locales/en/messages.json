@@ -1,0 +1,12 @@
+{
+    "extName": { "message": "Simple Bookmarks" },
+    "extDisc": { "message": "Halfway through the document? Just a simple click is needed to record your progress." },
+    "popupTitle": { "message": "Enable/Disable Bookmarks" },
+    "colorOrangeRed": { "message": "Orange-red" },
+    "colorYellow": { "message": "Yellow" },
+    "colorGreen": { "message": "Green" },
+    "colorCyan": { "message": "Cyan" },
+    "colorPurple": { "message": "Purple" },
+    "colorGray": { "message": "Gray" },
+    "clearBookmark": { "message": "Clear the bookmark" }
+}
