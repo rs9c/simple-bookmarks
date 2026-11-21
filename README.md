@@ -33,7 +33,7 @@
 
 ### Microsoft Edge
 
-0. ~~Direct link: [I am a link. Don't ask why nothing happens when you click. It's because it's not published yet](https://github.com/rs9c/simple-bookmarks)~~
+0. **Direct Link: [Simple Bookmarks - Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/fcblgeedfjfmpehjimifonbidbojhmko)**
 1. Go to the [Get Edge Extensions](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) page;
 2. Search for `Simple Bookmarks` (look for the developer `RISINGSUN517`), and click "Get";
 3. Enjoy it!

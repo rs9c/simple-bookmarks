@@ -33,7 +33,7 @@
 
 ### Microsoft Edge
 
-0. ~~直链：[我是一个链接，别问为什么点完啥也木有，没有就是还没上架](https://github.com/rs9c/simple-bookmarks)~~
+0. **直接前往：[简单的书签 - Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/fcblgeedfjfmpehjimifonbidbojhmko)**
 1. 前往 [获取 Edge 扩展](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) 页面；
 2. 搜索 `简单的书签` 或 `Simple Bookmarks`（认准开发者`RISINGSUN517`），点击“获取”；
 3. Enjoy it!
